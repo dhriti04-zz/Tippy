@@ -14,6 +14,7 @@
 		D41DEEB41FE4F0F000C7A27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41DEEB21FE4F0F000C7A27E /* LaunchScreen.storyboard */; };
 		D41DEEBF1FE4F0F000C7A27E /* TippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41DEEBE1FE4F0F000C7A27E /* TippyTests.swift */; };
 		D41DEECA1FE4F0F000C7A27E /* TippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41DEEC91FE4F0F000C7A27E /* TippyUITests.swift */; };
+		D466F0171FE86FC900EB96F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D466F0161FE86FC900EB96F3 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D41DEEC51FE4F0F000C7A27E /* TippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41DEEC91FE4F0F000C7A27E /* TippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TippyUITests.swift; sourceTree = "<group>"; };
 		D41DEECB1FE4F0F000C7A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D466F0161FE86FC900EB96F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D41DEE9D1FE4F0EF00C7A27E = {
 			isa = PBXGroup;
 			children = (
+				D466F0161FE86FC900EB96F3 /* SettingsViewController.swift */,
 				D41DEEA81FE4F0F000C7A27E /* Tippy */,
 				D41DEEBD1FE4F0F000C7A27E /* TippyTests */,
 				D41DEEC81FE4F0F000C7A27E /* TippyUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				D41DEEAC1FE4F0F000C7A27E /* ViewController.swift in Sources */,
 				D41DEEAA1FE4F0F000C7A27E /* AppDelegate.swift in Sources */,
+				D466F0171FE86FC900EB96F3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tippy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tippy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
