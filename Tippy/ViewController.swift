@@ -18,6 +18,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var b: UILabel!
     @IBOutlet weak var t: UILabel!
     @IBOutlet weak var tt: UILabel!
+    @IBOutlet weak var edt: UILabel!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = Foundation.UserDefaults.standard
+        let value1 = defaults.integer(forKey: "default")
+        tipControl.selectedSegmentIndex = value1
+        
+        let value2 = defaults.bool(forKey: "switch")
+        themeControl.isOn = value2
+        
+        calculateTip(self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +63,7 @@ class ViewController: UIViewController {
             t.textColor = UIColor.white
             b.textColor = UIColor.white
             tt.textColor = UIColor.white
+            edt.textColor = UIColor.white
         }
         else {
             self.view.backgroundColor = UIColor.white
